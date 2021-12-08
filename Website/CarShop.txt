@@ -3,8 +3,12 @@
        <title>A PHP-MySQL Program perform various operations on the CarShop database.</title>
 </head>
 
-<body bgcolor="white">
 
+<!-- <div style="background-image: url('background.jpg');">  -->
+
+
+<body bgcolor="white">
+<font color="black"> 
 <h3>Connecting to CarShop database using MySQL/PHP</h3>
 
 
@@ -127,6 +131,7 @@
 
 <hr>
 
+<h3><b>Implementation Code</b></h3>
 <p>
 <a href="CarShop.txt" >Contents</a>
 of the html file.
@@ -136,9 +141,32 @@ of the html file.
 of the CustomerCars PHP file.
 
 <p>
-<a href="CustomerCars.txt" >Contents</a>
-of the CustomerCars PHP file.
+<a href="Contract.txt" >Contents</a>
+of the Contract PHP file.
 
+<p>
+<a href="Customers.txt" >Contents</a>
+of the Customers PHP file.
 
+<p>
+<a href="Employees.txt" >Contents</a>
+of the Employees PHP file.
+
+<p>
+<a href="EmployeeType.txt" >Contents</a>
+of the EmployeeType PHP file.
+
+<p>
+<a href="WorkDone.txt" >Contents</a>
+of the WorkDone PHP file.
+
+<p>
+<a href="WorkedOn.txt" >Contents</a>
+of the WorkedOn PHP file.
+
+<p>
+<a href="WorksWith.txt" >Contents</a>
+of the WorksWith PHP file.
+</font> 
 </body>
 </html>
