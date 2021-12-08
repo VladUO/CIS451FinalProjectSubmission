@@ -1,0 +1,168 @@
+<html>
+<head>
+       <title>A PHP-MySQL Program perform various operations on the CarShop database.</title>
+</head>
+
+<body bgcolor="white">
+
+<h3>Connecting to CarShop database using MySQL/PHP</h3>
+
+
+
+<hr size="5" color="green">
+
+<!-- Getting a list of all the employees. -->
+<p>
+<h3><b>If you would like to see all the employees and the shop they work in hit submit.</b></h3>
+<p>
+<form action="Employees.php" method="POST">
+<input type="submit" value="submit">
+</form>
+
+<hr size="5" color="green">  
+
+<!-- Getting a list of all mechanics or staff with the option to pick a particular shop and/or to display their SSN. -->
+<p>
+<h3><b>Use this to see the employees by employee type and shop, check the checkbox if you want their ssn numbers.</b></h3>
+<p>
+<form action="EmployeeType.php" method="POST">     
+       <select name="EmployeeType">
+              <option value="Mechanic">Mechanic</option>
+              <option value="Staff">Staff</option>
+       </select>
+       <br>
+       <br>
+       <select name="EmployeeShop">
+              <option value="IS NOT NULL">All shops</option>
+              <option value="= 'Goofys'">Goofys</option>
+              <option value="= 'Fudds'">Fudds</option>
+       </select>
+       <br><br>
+       <input type="checkbox" name="ShowSsn" value=", e.ssn">Show ssn numbers!
+       <br><br>
+       <input type="submit" value="submit">
+</form>
+
+<hr size="5" color="green">
+
+<!-- Getting a list of all the finishied or pending contracts. -->
+<p>
+<h3><b>Use this menu to see finished or pending contracts.</b></h3>
+<p>
+<form action="Contract.php" method="POST">     
+       <select name="Contract">
+              <option value="IS NULL">Pending contracts</option>
+              <option value="IS NOT NULL">Finished contracts</option>
+       </select>
+       <br><br>
+       <input type="submit" value="submit">
+</form>
+
+<hr size="5" color="green">
+
+<!-- Getting a list of work done by contract number. -->
+<p>
+<h3><b>If you would like to see what work was done or is to be done for a particular contract enter a contract number here.</b></h3>
+<p>
+<form action= "WorkDone.php" method="POST">
+       <input type="text" name="contract_ID"> <br>
+       <input type="submit" value="submit">
+       <input type="reset" value="erase">
+</form>
+
+<hr size="5" color="green">
+
+<!-- Getting a list of all the mechanics that worked on a particular contract. -->
+<p>
+<h3><b>Use this to see which mechanics worked on a contract by entering a contract number.</b></h3>
+<p>
+<form action="WorkedOn.php" method="POST">
+       <input type="text" name="contract_ID"> <br>
+       <input type="submit" value="submit">
+       <input type="reset" value="erase">
+</form>
+
+<hr size="5" color="green">
+
+<!-- Getting a list of all the customers. -->
+<p>
+<h3><b>If you would like to see the list of all the customers just hit "submit".</b></h3>
+<p>
+<form action="Customers.php" method="POST">
+       <input type="submit" value="submit">
+</form>
+
+<hr size="5" color="green">
+
+<!-- Getting a list of all the vehicles belonging to a customer by their customer ID. -->
+<p>
+<h3><b>Use this menu to see all the vehicles belonging to a customer, search by customer ID obtained from the menu above.</b></h3>
+<p>
+<form action="CustomerCars.php" method="POST">
+       <input type="text" name="customer_ID"> <br>
+       <input type="submit" value="submit">
+       <input type="reset" value="erase">
+</form>
+
+<hr size="5" color="green">
+
+<!-- Getting a list of all the customers a staff member works with. -->
+<p>
+<h3><b>Here you can get a list of all the customers that a given staff member works with.</b></h3>
+<p>
+<form action="WorksWith.php" method="POST">     
+       <select name="WorksWith">
+              <option value="3">eid 3 Brad Murray</option>
+              <option value="6">eid 6 Eric Myers</option>
+              <option value="9">eid 9 Jared Baker</option>
+              <option value="12">eid 12 John Miller</option>
+              <option value="15">eid 15 Fred Payne</option>
+              <option value="18">eid 18 Harold Morris</option>
+       </select>
+       <br><br>
+       <input type="submit" value="submit">
+</form>
+
+<hr size="5" color="green">
+
+<hr>
+
+<h3><b>Implementation Code</b></h3>
+<p>
+<a href="CarShop.txt" >Contents</a>
+of the html file.
+
+<p>
+<a href="CustomerCars.txt" >Contents</a>
+of the CustomerCars PHP file.
+
+<p>
+<a href="Contract.txt" >Contents</a>
+of the Contract PHP file.
+
+<p>
+<a href="Customers.txt" >Contents</a>
+of the Customers PHP file.
+
+<p>
+<a href="Employees.txt" >Contents</a>
+of the Employees PHP file.
+
+<p>
+<a href="EmployeeType.txt" >Contents</a>
+of the EmployeeType PHP file.
+
+<p>
+<a href="WorkDone.txt" >Contents</a>
+of the WorkDone PHP file.
+
+<p>
+<a href="WorkedOn.txt" >Contents</a>
+of the WorkedOn PHP file.
+
+<p>
+<a href="WorksWith.txt" >Contents</a>
+of the WorksWith PHP file.
+
+</body>
+</html>
